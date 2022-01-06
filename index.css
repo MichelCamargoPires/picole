@@ -22,13 +22,22 @@
  
      background: linear-gradient(
          315deg,
-         rgb(255, 0, 0) ,
+         red ,
         
-         rgba(0, 17, 255, 0.712)
+         blue
      );
      background-size: 200% 200%;
      animation: picole-animado 5s linear infinite forwards
  }
+@keyframes picole-animado{
+    from{
+        background-size: 0% 0%;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+
 
 .palito{
     position: absolute;
@@ -42,4 +51,5 @@
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: rgb(233, 203, 36);
 }
